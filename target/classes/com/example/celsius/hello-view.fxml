@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="169.0" prefWidth="380.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.celsius.HelloController">
+   <children>
+      <Button fx:id="conv" layoutX="14.0" layoutY="81.0" mnemonicParsing="false" onAction="#convb" prefHeight="25.0" prefWidth="352.0" text="Convert" />
+      <TextField fx:id="txtC" layoutX="14.0" layoutY="44.0" prefHeight="25.0" prefWidth="167.0" promptText="Temp in C" />
+      <TextField fx:id="txtF" layoutX="197.0" layoutY="44.0" prefHeight="25.0" prefWidth="167.0" promptText="Temp in F" />
+      <Label alignment="CENTER" layoutX="14.0" layoutY="10.0" prefHeight="25.0" prefWidth="167.0" text="Celsius">
+         <font>
+            <Font name="Kristen ITC" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="197.0" layoutY="13.0" prefHeight="17.0" prefWidth="167.0" text="Fahrenheit ">
+         <font>
+            <Font name="Kristen ITC" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="clear" layoutX="14.0" layoutY="120.0" mnemonicParsing="false" onAction="#clearb" prefHeight="25.0" prefWidth="167.0" text="Clear" />
+      <Button fx:id="exit" layoutX="197.0" layoutY="120.0" mnemonicParsing="false" onAction="#exit" prefHeight="25.0" prefWidth="167.0" text="Exit" />
+      <Label fx:id="errr" alignment="CENTER" layoutX="14.0" layoutY="145.0" prefHeight="17.0" prefWidth="352.0" text="Invalid values" textAlignment="CENTER" textFill="RED" visible="false" />
+   </children>
+</AnchorPane>
